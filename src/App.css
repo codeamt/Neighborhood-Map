@@ -1,0 +1,180 @@
+
+
+#container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#map-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+}
+#map {
+  height: 100%;
+  right: 0;
+}
+.list-view {
+  height: 100%;
+  background-color: #111;
+  width: 25%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 15px;
+  border-radius:2px;
+}
+.list-view > h1 {
+  position: absolute;
+  top: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  font-size: 26px;
+  color: #aaaaaa;
+  padding: 10px 0;
+  text-align: center;
+  width: calc(100% - 30px);
+  border-bottom: solid 1px grey;
+}
+.list-view > input {
+  position: inherit;
+  top: 75px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px !important;
+  border-radius: 5px;
+  border: solid 2px #aaaaaa;
+  color: #aaaaaa;
+  padding: 5px;
+  padding-left: 35px;
+  width: calc(100% - 70px);
+}
+.list-view > ul {
+  background: #333;
+  overflow: auto;
+  overflow-x: hidden;
+  top: 110px;
+  bottom: 25px;
+  position: absolute;
+  list-style: none;
+  padding: 0 5px 0 5px;
+
+  width: calc(100% - 40px);
+}
+
+/* styling ul's scrollbar */
+.list-view > ul::-webkit-scrollbar {
+  width: 5px;
+}
+.list-view > ul::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+.list-view > ul::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+.list-view > ul::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.list-view li {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  overflow-x: hidden;
+  padding-left: 10px;
+  font-family: 'Lato', sans-serif;
+}
+.button {
+  height: 100px;
+  padding: 10px 0;
+  padding-left: 35px;
+  padding-right: 25px;
+  width: 96%;
+  font-size: 16px !important;
+  border: none;
+  border-bottom: 1px solid grey;
+  text-align: left;
+  background-color: #111;
+  font-family: 'Lato', sans-serif;
+  color: #888;
+}
+.button:hover {
+  color: red;
+  cursor: pointer;
+}
+.list-view > img {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  padding: 0 22.5%;
+  width: 55%;
+}
+.infoWindow h1 {
+  color: red;
+  font-weight: lighter;
+}
+@media screen and (max-width: 1020px) {
+  .list-view > h1 {
+    font-size: 20px;
+  }
+  .list-view > input {
+    top: 70px;
+  }
+  .list-view > ul {
+    top: 95px;
+  }
+  .list-view > img {
+    padding: 0 15%;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .list-view > h1 {
+    font-size: 16px;
+  }
+  .list-view > input {
+    top: 60px;
+    font-size: 12px;
+  }
+  .list-view > ul {
+    top: 85px;
+  }
+  .list-view button {
+    font-size: 10px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 630px) {
+  .list-view > input {
+    font-size: 10px;
+    top: 75px;
+    padding: 5px;
+    width: calc(100% - 40px);
+  }
+  .list-view > ul {
+    top: 95px;
+    bottom: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-view > h1 {
+    font-size: 30px;
+  }
+  .list-view > input {
+    font-size: 28px;
+  }
+  .list-view > ul {
+    top: 130px;
+    bottom: 50px;
+  }
+  .list-view button {
+    font-size: 26px;
+  }
+  .list-view > img {
+    padding: 0 5%;
+    width: 90%;
+  }
+}
